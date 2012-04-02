@@ -24,5 +24,4 @@ public class AnagramsTest extends TestCase {
 		Assert.assertFalse(anagrams.checkForAnagram(null, "(2)gra()mana%"));
 		Assert.assertFalse(anagrams.checkForAnagram("empty", "(2)gra()mana%"));
 	}
-
 }
