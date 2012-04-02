@@ -1,5 +1,5 @@
 /**
- *  Copyright Ravi Dontharaju :)
+ *  
  */
 package ravid.java.programs.basic;
 
