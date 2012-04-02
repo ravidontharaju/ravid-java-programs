@@ -13,20 +13,6 @@ import org.apache.commons.lang.StringUtils;
 public class Anagrams {
 
 	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		
-		Anagrams anagrams = new Anagrams();
-		String stringOne = "((ana%)gram)2";
-		String stringTwo = "(2)gra()mana%";
-		
-		boolean isAnagram = anagrams.checkForAnagram(stringOne, stringTwo);
-		
-		System.out.println((isAnagram?"Anagrams!":"Not Anagrams!"));
-	}
-
-	/**
 	 * Takes in two String parameters, and checks whether they are anagrams
 	 * or not. Returns <code>true</code> if yes otherwise <code>false</code>.
 	 * 
@@ -34,7 +20,7 @@ public class Anagrams {
 	 * @param stringTwo The string to compare with.
 	 * @return <code>true</code> or <code>false</code>.
 	 */
-	private boolean checkForAnagram(String stringOne, String stringTwo) {
+	public boolean checkForAnagram(String stringOne, String stringTwo) {
 		if ((StringUtils.isBlank(stringOne) || StringUtils.isBlank(stringTwo)) 
 				|| (stringOne.length() != stringTwo.length())) {
 			return false;
