@@ -12,6 +12,16 @@ import org.apache.commons.lang.StringUtils;
  */
 public class Palindrome {
 
+	/**
+	 * Checks whether the given input string is a palindrome or not.
+	 * eg: 
+	 * - "testtest" will return <code>true</code>.
+	 * - "test" will return <code>false</code>.
+	 * - empty or null input will return <code>false</code>.
+	 * 
+	 * @param input The input to check.
+	 * @return <code>true</code> or <code>false</code>.
+	 */
 	public boolean checkForPalindrome(String input) {
 		if (StringUtils.isEmpty(input)) {
 			return false;
