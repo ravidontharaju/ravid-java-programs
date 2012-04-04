@@ -7,17 +7,13 @@
   <version>1.0-SNAPSHOT</version>
   <name>ravid-java-programs</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+  <properties>
+    <spring.version>3.0.5.RELEASE</spring.version>
+  </properties>
   <modules>
     <module>ravid-java-programs-basic</module>
     <module>ravid-java-programs-mongo</module>
     <module>ravid-java-programs-elasticsearch</module>
+    <module>ravid-java-programs-mvcapp</module>
   </modules>
 </project>
