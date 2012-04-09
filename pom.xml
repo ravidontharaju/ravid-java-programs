@@ -15,5 +15,6 @@
     <module>ravid-java-programs-mongo</module>
     <module>ravid-java-programs-elasticsearch</module>
     <module>ravid-java-programs-mvcapp</module>
+    <module>ravid-java-programs-basex</module>
   </modules>
 </project>
