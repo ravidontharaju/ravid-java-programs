@@ -126,4 +126,12 @@ class Node {
 	public Node getNext() {
 		return next;
 	}
+	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Node value is : " + value;
+	}
 }
