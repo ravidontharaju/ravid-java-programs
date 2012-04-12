@@ -9,7 +9,6 @@
   </parent>
   <groupId>ravid.java.programs.elasticsearch</groupId>
   <artifactId>ravid-java-programs-elasticsearch</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <name>ravid-java-programs-elasticsearch</name>
   <url>http://maven.apache.org</url>
   <dependencies>
