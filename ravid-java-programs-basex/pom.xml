@@ -9,7 +9,6 @@
   </parent>
   <groupId>ravid.java.programs.basex</groupId>
   <artifactId>ravid-java-programs-basex</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <name>ravid-java-programs-basex</name>
   <url>http://maven.apache.org</url>
   <dependencies>
