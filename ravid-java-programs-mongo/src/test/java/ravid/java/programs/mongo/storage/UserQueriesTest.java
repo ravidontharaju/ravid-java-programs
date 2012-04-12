@@ -11,9 +11,10 @@ import org.junit.Test;
 
 import ravid.java.programs.config.SpringConfigApp;
 import ravid.java.programs.mongo.model.User;
+import ravid.java.programs.mongo.storage.impl.UserQueriesMongo;
 
 /**
- *
+ * Test suite for {@link UserQueries}
  *
  * @author Ravi
  */
@@ -23,7 +24,7 @@ public class UserQueriesTest {
 
 	@Before
 	public void setUp() {
-		queries = SpringConfigApp.getUserQueries();
+		queries = (UserQueriesMongo)SpringConfigApp.getBean("userQueriesMongo");
 	}
 	/**
 	 * Test method for {@link ravid.java.programs.mongo.storage.UserQueries#get(ravid.java.programs.mongo.model.User)}.

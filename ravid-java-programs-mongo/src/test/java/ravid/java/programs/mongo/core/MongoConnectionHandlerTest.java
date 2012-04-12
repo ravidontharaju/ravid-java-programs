@@ -23,7 +23,7 @@ public class MongoConnectionHandlerTest extends TestCase {
 
 	@Before
 	public void setUp() {
-		handler = SpringConfigApp.getMongoConnectionHandler();
+		handler = (MongoConnectionHandler)SpringConfigApp.getBean("mongoConnectionHandler");
 	}
 
 	@Test
