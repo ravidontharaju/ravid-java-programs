@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public final class SpringConfigApp {
 
 	private static ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(
-			new String[] { "ravid/java/programs/mongo/core/applicationContext-MongoDB.xml" });
+			new String[] { "ravid/java/programs/mongo/config/applicationContext-MongoDB.xml" });
 
 	//Don't want anyone to create an instance even by mistake.
 	private SpringConfigApp() { }
