@@ -22,6 +22,7 @@ import com.mongodb.MongoOptions;
  *
  * @author Ravi
  */
+@SuppressWarnings("restriction")
 @Component
 public class MongoConnectionHandler {
 
@@ -42,7 +43,7 @@ public class MongoConnectionHandler {
     /**
      * Initiates a mongo connection post construct.
      */
-    @SuppressWarnings("unused")
+    @SuppressWarnings({ "unused" })
 	@PostConstruct
     private void initiateMongoConnection() {
         try {
