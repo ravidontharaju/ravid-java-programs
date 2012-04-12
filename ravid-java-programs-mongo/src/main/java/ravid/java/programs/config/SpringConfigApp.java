@@ -3,6 +3,7 @@
  */
 package ravid.java.programs.config;
 
+import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -18,7 +19,7 @@ public final class SpringConfigApp {
 	//Don't want anyone to create an instance even by mistake.
 	private SpringConfigApp() { }
 	
-	public static Object getBean(String name) {
+	public static Object getBean(String name) throws NoSuchBeanDefinitionException {
 		return ctx.getBean(name);
 	}
 	
