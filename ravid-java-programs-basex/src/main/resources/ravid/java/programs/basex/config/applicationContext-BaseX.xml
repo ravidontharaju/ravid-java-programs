@@ -12,4 +12,11 @@
 		location="classpath*:main.properties" />
 	<context:component-scan base-package="ravid.java.programs.basex" />
 	<context:annotation-config />
+	
+	<bean id="filePath" class="java.lang.String">
+		<constructor-arg type="java.lang.String" value="target/classes/factbook.xml" />
+	</bean>
+	
+	<bean id="context" class="org.basex.core.Context"/>
+	
 </beans>
