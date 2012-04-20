@@ -3,11 +3,10 @@
  */
 package ravid.java.programs.mongo.core;
 
-import java.net.UnknownHostException;
-
 import javax.annotation.PostConstruct;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -28,16 +27,12 @@ public class MongoConnectionHandler {
 
 	private static final Logger LOGGER = Logger.getLogger(MongoConnectionHandler.class);
 	
-	@Value("${port}")
-	private int port;
-	
-	@Value("${host}")
-	private String host;
-	
 	@Value("${database}")
 	private String database;
 
+	@Autowired
     private Mongo mongo;
+	
     private DB db;
     
     /**
@@ -47,7 +42,6 @@ public class MongoConnectionHandler {
 	@PostConstruct
     private void initiateMongoConnection() {
         try {
-            mongo = new Mongo(host , port);
             MongoOptions mongoOptions = mongo.getMongoOptions();
             
             mongoOptions.socketKeepAlive = true;
@@ -59,8 +53,6 @@ public class MongoConnectionHandler {
             mongoOptions.connectionsPerHost = 10;
             mongoOptions.w = -1;
             
-        } catch (UnknownHostException e) {
-            throw new RuntimeException("Mongo host not configured correctly, unable to reach host.", e);
         } catch (MongoException e) {
             throw new RuntimeException("Error creating mongo object", e);
         }
